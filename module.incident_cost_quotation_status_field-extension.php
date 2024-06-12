@@ -16,7 +16,7 @@ SetupWebPage::AddModule(
 		//
 		'dependencies' => array(
 			'itop-request-mgmt-itil/2.4.0',
-     		'itop-incident-mgmt-itil/2.4.0'
+     		'itop-incident-mgmt-itil/2.4.0's
 		),
 		'mandatory' => false,
 		'visible' => true,
