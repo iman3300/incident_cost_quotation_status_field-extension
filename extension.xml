@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension format="1.0">
+  <extension_code>incident_cost_quotation_status_field-extension</extension_code>
+  <version>1.0.0</version>
+  <label><![CDATA[incident cost quotation status field Extension]]></label>
+  <description><![CDATA[Put here a longer description of your extension]]></description>
+  <mandatory>false</mandatory>
+  <more_info_url></more_info_url>
+</extension>
