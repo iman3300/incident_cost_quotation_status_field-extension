@@ -32,13 +32,14 @@
     <sql>statuss</sql>
     <display_style>list</display_style>
     <values>
-        <value id="optional">Optional</value>
-        <value id="pendingBudgetApproval">Pending Budget Approval</value>
-        <value id="budgetApproval">Budget Approval</value>
-        <value id="reject">Reject</value>
+        <value id="optional" code="optional">Optional</value>
+        <value id="pendingBudgetApproval" code="pendingBudgetApproval">Pending Budget Approval</value>
+        <value id="budgetApproval" code="budgetApproval">Budget Approval</value>
+        <value id="reject" code="reject">Reject</value>
     </values>
     <tracking_level>none</tracking_level>
 </field>
+
 
 
             </fields> <!-- Corrected placement of closing fields tag -->
