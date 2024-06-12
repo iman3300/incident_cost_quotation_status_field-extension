@@ -29,26 +29,26 @@
                     <always_load_in_tables>true</always_load_in_tables>
                 </field>
                 <field id="statuss" xsi:type="AttributeEnum">
-                  <values>
-                  <value id="Optional">
-                          <code>Optional</code>
-                      </value>
-                      <value id="PendingBudgetApproval">
-                          <code>Pending Budget Approval</code>
-                      </value>
-                      <value id="BudgetApproval">
-                          <code>Budget Approval</code>
-                      </value>
-                      <value id="Reject">
-                          <code>Reject</code>
-                      </value>
-                      
-                  </values>
-                  <sql>statuss</sql>
-                  <default_value>Optional</default_value>
-                  <is_null_allowed>true</is_null_allowed>
-                  <display_style>list</display_style>
-              </field>
+    <values>
+        <value id="Optional">
+            <code>Optional</code>
+        </value>
+        <value id="PendingBudgetApproval">
+            <code>PendingBudgetApproval</code> <!-- Corrected code tag -->
+        </value>
+        <value id="BudgetApproval">
+            <code>BudgetApproval</code> <!-- Corrected code tag -->
+        </value>
+        <value id="Reject">
+            <code>Reject</code> <!-- Corrected code tag -->
+        </value>
+    </values>
+    <sql>statuss</sql>
+    <default_value>Optional</default_value>
+    <is_null_allowed>true</is_null_allowed>
+    <display_style>list</display_style>
+</field>
+
             </fields> <!-- Corrected placement of closing fields tag -->
             <presentation>
                 <details>
@@ -65,7 +65,7 @@
                                         <item id="quotation">
                                             <rank>65</rank>
                                         </item>
-                                        <item id="type">
+                                        <item id="statuss">
                                             <rank>75</rank>
                                         </item>
                                     </items>
@@ -82,7 +82,7 @@
                         <item id="quotation">
                             <rank>45</rank>
                         </item>
-                        <item id="type">
+                        <item id="statuss">
                             <rank>55</rank>
                         </item>
                     </items>
@@ -95,7 +95,7 @@
                         <item id="quotation">
                             <rank>25</rank>
                         </item>
-                        <item id="type">
+                        <item id="statuss">
                             <rank>35</rank>
                         </item>
                     </items>
