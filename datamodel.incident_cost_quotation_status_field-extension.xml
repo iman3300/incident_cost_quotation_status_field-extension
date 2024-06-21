@@ -1,4 +1,6 @@
-<classes>
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0">
+    <classes>
   <class id="Incident" _delta="define">
     <fields>
       <field id="incident_priority" xsi:type="AttributeEnum">
@@ -17,3 +19,5 @@
     </fields>
   </class>
 </classes>
+
+</itop_design>
