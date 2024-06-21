@@ -29,35 +29,33 @@
                     <always_load_in_tables>true</always_load_in_tables>
                 </field>
                 <field id="pilih" xsi:type="AttributeEnum">
-                        <sort_type>label</sort_type>
-                        <values>
-                            <value id="in_person">
+                    <sort_type>label</sort_type>
+                    <values>
+                        <value id="in_person">
                             <code>in_person</code>
-                            </value>
-                            <value id="chat">
+                        </value>
+                        <value id="chat">
                             <code>chat</code>
-                            </value>
-                            <value id="mail">
+                        </value>
+                        <value id="mail">
                             <code>mail</code>
-                            </value>
-                            <value id="phone">
+                        </value>
+                        <value id="phone">
                             <code>phone</code>
-                            </value>
-                            <value id="portal">
+                        </value>
+                        <value id="portal">
                             <code>portal</code>
-                            </value>
-                            <value id="monitoring">
+                        </value>
+                        <value id="monitoring">
                             <code>monitoring</code>
-                            </value>
-                        </values>
+                        </value>
+                    </values>
                     <sql>pilih</sql>
-                <default_value>phone</default_value>
-            <is_null_allowed>true</is_null_allowed>
-            <display_style>list</display_style>
-            </field>
-
-
-            </fields> <!-- Corrected placement of closing fields tag -->
+                    <default_value>phone</default_value>
+                    <is_null_allowed>true</is_null_allowed>
+                    <display_style>list</display_style>
+                </field>
+            </fields>
             <presentation>
                 <details>
                     <items>
@@ -73,11 +71,10 @@
                                         <item id="quotation">
                                             <rank>65</rank>
                                         </item>
-                                         <attribute id="pilih">
-                                            <read_only/>
+                                        <item id="pilih">
                                             <rank>75</rank>
-                                        </attribute>
-                                
+                                            <read_only/>
+                                        </item>
                                     </items>
                                 </item>
                             </items>
@@ -92,10 +89,10 @@
                         <item id="quotation">
                             <rank>45</rank>
                         </item>
-                     <attribute id="pilih">
-                     <rank>55</rank>
-                                            <read_only/>
-                                        </attribute>
+                        <item id="pilih">
+                            <rank>55</rank>
+                            <read_only/>
+                        </item>
                     </items>
                 </search>
                 <list>
@@ -106,10 +103,10 @@
                         <item id="quotation">
                             <rank>25</rank>
                         </item>
-                       <attribute id="pilih">
-                       <rank>35</rank>
-                                            <read_only/>
-                                        </attribute>
+                        <item id="pilih">
+                            <rank>35</rank>
+                            <read_only/>
+                        </item>
                     </items>
                 </list>
             </presentation>
