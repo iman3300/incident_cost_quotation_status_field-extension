@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0">
     <classes>
-  <class id="Incident" _delta="define">
-    <fields>
-      <field id="incident_priority" xsi:type="AttributeEnum">
+        <class id="Incident"> 
+            <parent>Incident</parent>
+            <properties>
+                <comment><![CDATA[/**
+ * Persistent classes for a CMDB
+ *
+ * @copyright   Copyright (C) 201022-2099 Guenther Huber
+ * @license     http://opensource.org/licenses/AGPL-3.0
+ */]]></comment>
+                <category>bizmodel,searchable,requestmgmt</category>
+                <abstract>false</abstract>
+                <key_type>autoincrement</key_type>
+                <db_table>ticket_request</db_table>
+            </properties>
+            <fields>
+                <field id="incident_priority" xsi:type="AttributeEnum">
         <values>
           <value id="high">High</value>
           <value id="medium">Medium</value>
@@ -16,8 +29,44 @@
         <origin>custom</origin>
         <is_linkset>false</is_linkset>
       </field>
-    </fields>
-  </class>
-</classes>
-
+            </fields>
+            <presentation>
+                <details>
+                    <items>
+                        <item id="col:col1">
+                            <rank>50</rank>
+                            <items>
+                                <item id="fieldset:Ticket:baseinfo">
+                                    <rank>10</rank>
+                                    <items>
+                                        <item id="incident_priority">
+                                            <rank>55</rank>
+                                        </item>
+                                
+                
+                                    </items>
+                                </item>
+                            </items>
+                        </item>
+                    </items>
+                </details>
+                <search>
+                    <items>
+                        <item id="incident_priority">
+                            <rank>35</rank>
+                        </item>
+               
+                    </items>
+                </search>
+                <list>
+                    <items>
+                        <item id="incident_priority">
+                            <rank>15</rank>
+                        </item>
+                    
+                    </items>
+                </list>
+            </presentation>
+        </class>
+    </classes>
 </itop_design>
