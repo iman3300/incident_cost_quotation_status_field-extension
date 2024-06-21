@@ -71,10 +71,7 @@
                                         <item id="quotation">
                                             <rank>65</rank>
                                         </item>
-                                        <item id="pilih">
-                                            <rank>75</rank>
-                                            <read_only/>
-                                        </item>
+                
                                     </items>
                                 </item>
                             </items>
@@ -89,10 +86,6 @@
                         <item id="quotation">
                             <rank>45</rank>
                         </item>
-                        <item id="pilih">
-                            <rank>55</rank>
-                            <read_only/>
-                        </item>
                     </items>
                 </search>
                 <list>
@@ -103,10 +96,7 @@
                         <item id="quotation">
                             <rank>25</rank>
                         </item>
-                        <item id="pilih">
-                            <rank>35</rank>
-                            <read_only/>
-                        </item>
+                  
                     </items>
                 </list>
             </presentation>
