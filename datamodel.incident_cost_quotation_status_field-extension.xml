@@ -16,20 +16,22 @@
                 <db_table>ticket_request</db_table>
             </properties>
             <fields>
-                <field id="incident_priority" xsi:type="AttributeEnum">
-        <values>
-          <value id="high">High</value>
-          <value id="medium">Medium</value>
-          <value id="low">Low</value>
-        </values>
-        <default_value>medium</default_value>
-        <sql>incident_priority</sql>
-        <is_null_allowed>false</is_null_allowed>
-        <depends_on></depends_on>
-        <origin>custom</origin>
-        <is_linkset>false</is_linkset>
-      </field>
-            </fields>
+                <field id="cost" xsi:type="AttributeString" _delta="define">
+                    <sql>cost</sql>
+                    <default_value/>
+                    <is_null_allowed>true</is_null_allowed>
+                    <always_load_in_tables>true</always_load_in_tables>
+                </field>
+                <field id="quotation" xsi:type="AttributeString" _delta="define">
+                    <sql>quotation</sql>
+                    <default_value/>
+                    <is_null_allowed>true</is_null_allowed>
+                    <always_load_in_tables>true</always_load_in_tables>
+                </field>
+
+
+
+            </fields> <!-- Corrected placement of closing fields tag -->
             <presentation>
                 <details>
                     <items>
@@ -39,11 +41,13 @@
                                 <item id="fieldset:Ticket:baseinfo">
                                     <rank>10</rank>
                                     <items>
-                                        <item id="incident_priority">
+                                        <item id="cost">
                                             <rank>55</rank>
                                         </item>
+                                        <item id="quotation">
+                                            <rank>65</rank>
+                                        </item>
                                 
-                
                                     </items>
                                 </item>
                             </items>
@@ -52,18 +56,24 @@
                 </details>
                 <search>
                     <items>
-                        <item id="incident_priority">
+                        <item id="cost">
                             <rank>35</rank>
                         </item>
-               
+                        <item id="quotation">
+                            <rank>45</rank>
+                        </item>
+                     
                     </items>
                 </search>
                 <list>
                     <items>
-                        <item id="incident_priority">
+                        <item id="cost">
                             <rank>15</rank>
                         </item>
-                    
+                        <item id="quotation">
+                            <rank>25</rank>
+                        </item>
+                       
                     </items>
                 </list>
             </presentation>
