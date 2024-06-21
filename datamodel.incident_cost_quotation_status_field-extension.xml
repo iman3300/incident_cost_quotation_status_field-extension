@@ -28,33 +28,17 @@
                     <is_null_allowed>true</is_null_allowed>
                     <always_load_in_tables>true</always_load_in_tables>
                 </field>
-                <field id="pilih" xsi:type="AttributeEnum">
-                    <sort_type>label</sort_type>
-                    <values>
-                        <value id="in_person">
-                            <code>in_person</code>
-                        </value>
-                        <value id="chat">
-                            <code>chat</code>
-                        </value>
-                        <value id="mail">
-                            <code>mail</code>
-                        </value>
-                        <value id="phone">
-                            <code>phone</code>
-                        </value>
-                        <value id="portal">
-                            <code>portal</code>
-                        </value>
-                        <value id="monitoring">
-                            <code>monitoring</code>
-                        </value>
-                    </values>
-                    <sql>pilih</sql>
-                    <default_value>phone</default_value>
-                    <is_null_allowed>true</is_null_allowed>
-                    <display_style>list</display_style>
-                </field>
+                <field id="age" xsi:type="AttributeEnum">
+          <sql>age</sql>
+          <values>
+            <value id="child">Child</value>
+            <value id="teen">Teen</value>
+            <value id="adult">Adult</value>
+            <value id="senior">Senior</value>
+          </values>
+          <default_value>adult</default_value>
+          <is_null_allowed>false</is_null_allowed>
+        </field>
             </fields>
             <presentation>
                 <details>
